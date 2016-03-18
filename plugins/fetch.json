@@ -1,12 +1,4 @@
 {
-    "com.phonegap.plugins.barcodescanner": {
-        "source": {
-            "type": "registry",
-            "id": "com.phonegap.plugins.barcodescanner"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
@@ -27,6 +19,16 @@
         "source": {
             "type": "registry",
             "id": "org.apache.cordova.network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.barcodescanner": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Telerik-Verified-Plugins/BarcodeScanner",
+            "subdir": ".",
+            "ref": "fb0a4f80092ab173366c98c6a1555bbed0ad864f"
         },
         "is_top_level": true,
         "variables": {}

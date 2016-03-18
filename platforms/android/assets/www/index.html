@@ -2,21 +2,58 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <meta name="format-detection" content="telephone=no"/>
-  <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+  <meta charset="utf-8">
+  <title>Action Scan</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" type="text/css" href="bower_components/ratchet/dist/css/ratchet.min.css"/>
+  <link rel="stylesheet" type="text/css" href="bower_components/ungrid/ungrid.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
-
 <body>
 
-<p>
-  <button id="startScan">Start Scan</button>
-</p>
 
-<div id="results"></div>
+<header class="bar bar-nav">
+  <h1 class="title">Action Scan</h1>
+</header>
+<div class="content">
+  <div class="row">
+    <div class="col">
+      <div class="content-padded">
+        <h6>Cloudstaff Action Scan</h6>
+      </div>
+    </div>
+    <div class="col">
 
+    </div>
+    <div class="col">
+      <div class="content-padded">
+        <p>
+          Cloudstaff Action Tags are a great way to streamline
+          communications and workflow with your Cloudstaffers
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div id="results"></div>
+    </div>
+    <div class="col">
+      <div class="content-padded">
+        <button class="btn btn-positive btn-block">Rescan</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="bar bar-tab">
+  <button id="close" class="btn btn-primary btn-block">Close</button>
+</nav>
+<!--Body Scripts-->
 <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
+<script type="text/javascript" src="bower_components/handlebars/handlebars.min.js"></script>
+<script type="text/javascript" src="bower_components/ratchet/dist/js/ratchet.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
