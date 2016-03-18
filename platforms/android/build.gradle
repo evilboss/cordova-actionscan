@@ -96,7 +96,6 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "com.phonegap.plugins.barcodescanner/actionscan-ignorelinterrors.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
