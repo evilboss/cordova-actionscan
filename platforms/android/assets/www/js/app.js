@@ -9,16 +9,16 @@ var getTagId = function (result) {
   }
 }
 function setResult(result) {
-  resultDiv.innerHTML = result;
+  resultDiv.innerHTML = '<div class="result-info ' + result + '"><h1>' + result + '</h1></div>';
 }
 function startScan() {
   cordova.plugins.barcodeScanner.scan(
     function (result) {
       var tagId = getTagId(result);
-      setResult('<h1>Result:Success</h1>');
+      setResult('Success');
     },
     function (error) {
-      setResult('<h1>Result:Failed</h1>');
+      setResult('Failed');
     },
     {
       "preferFrontCamera": false,
@@ -29,9 +29,8 @@ function startScan() {
 
 }
 function init() {
-  document.querySelector("#close").addEventListener("touchend", startScan, false);
+  document.querySelector("#rescan").addEventListener("touchend", startScan, false);
   resultDiv = document.querySelector("#results");
-  setResult('<h1>Result:<b>Butu</b></h1>');
 }
 document.addEventListener("deviceready", init, false);
 

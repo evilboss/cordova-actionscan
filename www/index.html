@@ -14,18 +14,15 @@
 <body>
 
 
-<header class="bar bar-nav">
+<header class="bar bar-nav bg-blue">
   <h1 class="title">Action Scan</h1>
 </header>
 <div class="content">
   <div class="row">
     <div class="col">
       <div class="content-padded">
-        <h6>Cloudstaff Action Scan</h6>
+        <h5>Cloudstaff Action Scan</h5>
       </div>
-    </div>
-    <div class="col">
-
     </div>
     <div class="col">
       <div class="content-padded">
@@ -35,19 +32,19 @@
         </p>
       </div>
     </div>
-    <div class="col">
+
       <div id="results"></div>
-    </div>
+
     <div class="col">
       <div class="content-padded">
-        <button class="btn btn-positive btn-block">Rescan</button>
+        <button class="btn btn-positive btn-block" id="rescan">Rescan</button>
       </div>
     </div>
   </div>
 </div>
-<nav class="bar bar-tab">
+<div class="bar bar-standard bar-footer">
   <button id="close" class="btn btn-primary btn-block">Close</button>
-</nav>
+</div>
 <!--Body Scripts-->
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
