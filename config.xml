@@ -23,5 +23,9 @@
     <icon src="res/icons/android/drawable-mdpi/ic_launcher.png" density="mdpi"/>
     <icon src="res/icons/android/drawable-hdpi/ic_launcher.png" density="hdpi"/>
     <icon src="res/icons/android/drawable-xhdpi/ic_launcher.png" density="xhdpi"/>
+    <feature name="InAppBrowser">
+      <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+    </feature>
+
   </platform>
 </widget>
