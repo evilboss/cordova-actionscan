@@ -5,7 +5,14 @@ var resultDiv;
 var getTagId = function (result) {
   if (result.text.includes('actiontag.io')) {
     var tagId = result.text;
-    return tagId;
+    //Need to resolve tagId
+    if (tagId) {
+      if (tagId.indexOf('http://') >= 0) {
+        return tagId;
+      }
+      tagId = 'http://' + tagId;
+      return tagId;
+    }
   }
 }
 function setResult(result) {
@@ -16,7 +23,7 @@ function startScan() {
     function (result) {
       var tagId = getTagId(result);
       setResult('Success');
-      openActionTag(result.text);
+      openActionTag(tagId);
     },
     function (error) {
       setResult('Failed');
@@ -28,17 +35,20 @@ function startScan() {
     }
   );
 }
-function closeApp(){
+function closeApp() {
   navigator.app.exitApp();
 
 }
 function openActionTag(actionTag) {
-  cordova.InAppBrowser.open(actionTag, '_blank');
+  cordova.InAppBrowser.open(actionTag, '_blank','location=no','zoom=yes');
 }
 function init() {
-  $("#close").click(function(){closeApp()});
-  $("#rescan").click(function(){startScan()});
+  $("#close").click(function () {
+    closeApp()
+  });
+  $("#rescan").click(function () {
+    startScan()
+  });
   resultDiv = $("#results");
-  setResult('Failed');
 }
 document.addEventListener("deviceready", init, false);
