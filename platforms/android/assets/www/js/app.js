@@ -23,7 +23,12 @@ function startScan() {
     function (result) {
       var tagId = getTagId(result);
       setResult('Success');
-      openActionTag(tagId);
+      if(tagId){
+        openActionTag(tagId);
+      }else{
+        alert('This is not an action tag');
+      }
+
     },
     function (error) {
       setResult('Failed');
@@ -44,11 +49,12 @@ function openActionTag(actionTag) {
 }
 function init() {
   $("#close").click(function () {
-    closeApp()
+    closeApp();
   });
   $("#rescan").click(function () {
-    startScan()
+    startScan();
   });
   resultDiv = $("#results");
+  startScan();
 }
 document.addEventListener("deviceready", init, false);
