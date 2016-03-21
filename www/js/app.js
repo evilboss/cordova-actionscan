@@ -9,13 +9,14 @@ var getTagId = function (result) {
   }
 }
 function setResult(result) {
-  resultDiv.innerHTML = '<div class="result-info ' + result + '"><h1>' + result + '</h1></div>';
+  resultDiv.html('<div class="result-info ' + result + '"><h1>' + result + '</h1></div>');
 }
 function startScan() {
   cordova.plugins.barcodeScanner.scan(
     function (result) {
       var tagId = getTagId(result);
       setResult('Success');
+      openActionTag(result.text);
     },
     function (error) {
       setResult('Failed');
@@ -26,13 +27,17 @@ function startScan() {
       "prompt": "Place an action-tag inside the scan area"
     }
   );
+}
+function closeApp(){
+  navigator.app.exitApp();
 
+}
+function openActionTag(actionTag) {
+  cordova.InAppBrowser.open(actionTag, '_blank');
 }
 function init() {
-  document.querySelector("#rescan").addEventListener("touchend", startScan, false);
-  resultDiv = document.querySelector("#results");
+  $("#close").click(function(){closeApp()});
+  $("#rescan").click(function(){startScan()});
+  resultDiv = $("#results");
 }
 document.addEventListener("deviceready", init, false);
-
-
-
