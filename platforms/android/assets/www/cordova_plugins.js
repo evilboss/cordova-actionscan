@@ -33,14 +33,6 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -49,8 +41,7 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.1",
     "org.apache.cordova.device": "0.3.0",
     "org.apache.cordova.network-information": "0.2.15",
-    "com.phonegap.plugins.barcodescanner": "2.0.0",
-    "cordova-plugin-inappbrowser": "1.3.1-dev"
+    "com.phonegap.plugins.barcodescanner": "2.0.0"
 }
 // BOTTOM OF METADATA
 });
