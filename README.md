@@ -13,9 +13,9 @@ we want an App that will read action tags
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Installation](#markdown-header-installation)
+- [Usage](#markdown-header-usage)
+- [License](#markdown-header-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
