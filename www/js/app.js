@@ -45,7 +45,7 @@ function closeApp() {
 
 }
 function openActionTag(actionTag) {
-  cordova.InAppBrowser.open(actionTag, '_blank','location=no','zoom=yes');
+  $('#content').html('<iframe style="height:80vh !important; width:100vw !important;" src="'+actionTag+'"></iframe>');
 }
 function init() {
   $("#close").click(function () {
@@ -58,3 +58,4 @@ function init() {
   startScan();
 }
 document.addEventListener("deviceready", init, false);
+
