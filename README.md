@@ -1,7 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Action Scan](#action-scan)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Credits](#credits)
+  - [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Action Scan
+=========================
+Project 64b is for Andriod
 
-TODO: Write a project description
+There are lots of BArcode Scanners on the iOS and Android store…
 
+but they all are TOO complicated.. 
+too many options, too many Dialogs that pop up
+
+we want an App that will read action tags
 ## Installation
 
 TODO: Describe the installation process
@@ -10,22 +29,7 @@ TODO: Describe the installation process
 
 TODO: Write usage instructions
 
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-a
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
 
 ## License
 
-TODO: Write license
+This code is published under the [MIT license](LICENSE).
