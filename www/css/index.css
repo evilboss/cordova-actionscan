@@ -141,7 +141,7 @@ header > .title {
   margin: 0 auto;
 }
 
-.result-info{
+.result-info {
   -webkit-box-shadow: 1px 5px 30px -1px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 1px 5px 30px -1px rgba(0, 0, 0, 0.69);
   box-shadow: 1px 5px 30px -1px rgba(0, 0, 0, 0.69);
@@ -161,4 +161,10 @@ header > .title {
   background: #d9534f;
 }
 
+.white {
+  color: white !important;
+}
 
+.popover:before {
+  display: none !important;
+}

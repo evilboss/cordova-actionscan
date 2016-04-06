@@ -15,14 +15,11 @@ var getTagId = function (result) {
     }
   }
 }
-function setResult(result) {
-  resultDiv.html('<div class="result-info ' + result + '"><h1>' + result + '</h1></div>');
-}
+
 function startScan() {
   cordova.plugins.barcodeScanner.scan(
     function (result) {
       var tagId = getTagId(result);
-      setResult('Success');
       if(tagId){
         openActionTag(tagId);
       }else{
@@ -31,7 +28,6 @@ function startScan() {
 
     },
     function (error) {
-      setResult('Failed');
     },
     {
       "preferFrontCamera": false,
@@ -54,8 +50,6 @@ function init() {
   $("#rescan").click(function () {
     startScan();
   });
-  resultDiv = $("#results");
   startScan();
 }
 document.addEventListener("deviceready", init, false);
-
