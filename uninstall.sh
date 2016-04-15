@@ -4,6 +4,7 @@ if [ "$(type -t cordova)" ];
     cordova plugin rm com.phonegap.plugins.barcodescanner
     cordova plugin rm cordova-plugin-whitelist
     cordova plugin rm cordova-plugin-device
+    cordova plugin rm cordova-plugin-x-toast
     cordova platform rm android
     cordova platforms ls
     cordova plugin list

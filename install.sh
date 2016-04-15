@@ -5,6 +5,7 @@ if [ "$(type -t cordova)" ];
        cordova plugin add cordova-plugin-device
        cordova plugin add cordova-plugin-whitelist
        cordova plugin add https://github.com/Telerik-Verified-Plugins/BarcodeScanner.git#fb0a4f80092ab173366c98c6a1555bbed0ad864f
+       cordova plugin add cordova-plugin-x-toast
        cordova platforms ls
        cordova plugin list
        if [ "$(type -t bower)" ];

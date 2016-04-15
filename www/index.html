@@ -14,14 +14,15 @@
 <body>
 <header class="bar bar-nav bg-blue">
   <a href="#popover" class="icon icon-bars pull-right white"></a>
+
   <h1 class="title">Action Scan</h1>
 </header>
 <div id="popover" class="popover">
-  <header class="bar bar-nav">
-    <h1 class="title">Cloudstaff Action Scanner</h1>
-  </header>
+
   <ul class="table-view">
-    <li class="table-view-cell"><a href="about.html">About</a></li>
+    <li class="table-view-cell"><h4>ActionTag Scanner</h4></li>
+    <li class="table-view-cell"><a href="about.html" data-transition="slide-in">About</a></li>
+    <li class="table-view-cell"><a href="http://actiontag.io/">Visit</a></li>
   </ul>
 </div>
 <div id="content" class="content">
@@ -51,16 +52,14 @@
     </div>
   </div>
 </div>
-<div class="bar bar-standard bar-footer">
-  <button id="close" class="btn btn-primary btn-block">Close</button>
+<div class="bar bar-standard bar-footer" style="height: 70px !important;">
+  <button id="close" class="btn btn-primary btn-block" style="padding: 20px 0;">Close</button>
 </div>
 <!--Body Scripts-->
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/jquery-mobile/js/jquery.mobile.js"></script>
-
 <script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
-<script type="text/javascript" src="bower_components/handlebars/handlebars.min.js"></script>
 <script type="text/javascript" src="bower_components/ratchet/dist/js/ratchet.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
